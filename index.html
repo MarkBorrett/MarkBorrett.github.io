@@ -9,11 +9,16 @@
 <body>
     <H1>PROOF</H1>
     <P>This link takes to Capacity Map</P>
-    <a href="map.html">Capicty Map</a>
+    <iframe src="" frameborder="0"></iframe>
+    <div>
+        <button onclick="navigateTo('map.html')">capacitymap</button>
+    </div>
 </body>
-
-
-
+<script>
+    function navigateTo(page) {
+        document.querySelector('iframe').src = page;
+    }
+</script>
 
 
 
